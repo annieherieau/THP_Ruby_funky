@@ -5,7 +5,7 @@
 # somme des multiples de 3 et 5 jusqu'au final_num exclu >> retrun Interger
 def sum_of_3_or_5_multiples(number)
   # accepte uniqment les entiers naturels
-  'Erreur : uniquement les entiers naturels' unless number.interger? && number >= 0
+  'Erreur : uniquement les entiers naturels' unless number.class == Integer && number >= 0
   
   # Array des nombres jusqu'à number EXCLU
   # garder les nombres qui sont des multiples de 3 ou 5
@@ -18,7 +18,7 @@ end
 #_________ Solution 2
 # accepte uniqment les entiers naturels
 def is_valid(number)
-  number.integer? && number >=0
+  number.class == Integer && number >=0
 end
 
 # verifie si multiple de 3 ou 5
