@@ -3,15 +3,15 @@
 
 # _______ Solution 1
 # somme des multiples de 3 et 5 jusqu'au final_num exclu >> retrun Interger
-def sum_of_3_or_5_multiples(final_number)
+def sum_of_3_or_5_multiples(number)
   # accepte uniqment les entiers naturels
-  return 'Erreur : uniquement les entiers naturels' unless final_number.class == Integer && final_number >= 0
+  'Erreur : uniquement les entiers naturels' unless number.class == Integer && number >= 0
   
-  # Array des nombres jusqu'à final_number EXCLU
+  # Array des nombres jusqu'à number EXCLU
   # garder les nombres qui sont des multiples de 3 ou 5
   # renvoyer la somme des multiples
-  Array.new(final_number-1){ |index| index+1 }
-  .filter{ |num| (number%3).zero? ||(number%5).zero? }
+  Array.new(number-1){ |index| index+1 }
+  .filter{ |num| (num%3).zero? ||(num%5).zero? }
   .sum
 end
 
