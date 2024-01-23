@@ -18,7 +18,7 @@ end
 #_________ Solution 2
 # accepte uniqment les entiers naturels
 def is_valid(number)
-  number.class == Integer && number >=0
+  number.integer? && number >=0
 end
 
 # verifie si multiple de 3 ou 5
